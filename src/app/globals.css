@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar::-webkit-scrollbar {
+  height: 4px; /* Adjust height for horizontal scrollbar */
+  width: 4px; /* Adjust width for vertical scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light gray track */
+  border-radius: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Thumb color */
+  border-radius: 8px;
+  border: 2px solid #f0f0f0; /* Adds space around the thumb */
+}
+
+/* For Firefox */
+.scrollbar {
+  scrollbar-width: thin; /* Thinner scrollbar */
+  scrollbar-color: #a0aec0 #f0f0f0; /* Thumb and track color */
+}
